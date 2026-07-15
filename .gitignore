@@ -1,0 +1,5 @@
+# my extra folders
+Revision/
+
+# exe files: output of c++ files
+*.exe
