@@ -15,6 +15,25 @@ void reverse(int arr[], int size){
         arr[left] = arr[right];
         arr[right] = leftEle;
 
+
+        left++; right--;
+
+    }
+
+    cout << "Sucessfully reversed the array" << endl;
+
+}
+
+// reverse array using two pointer approach using the swap fucntion
+void swapReverse(int arr[], int size){
+    cout << endl << "Reversing the Array ..." << endl;
+
+    int left = 0;
+    int right = size-1;
+
+    // handled both even and odd size of array
+    while(left < right){
+        swap(arr[left], arr[right]);
         left++; right--;
 
     }
@@ -36,6 +55,10 @@ int main(){
     cout << endl <<  "Array after reversing: ";
     for(int i=0; i<size; i++){cout << arr[i] << " ";}
 
+    // reverse array using swap
+    swapReverse(arr, size);
+    cout << endl <<  "Array after reversing again with swap function: ";
+    for(int i=0; i<size; i++){cout << arr[i] << " ";}
     
     cout << endl << "Successful run\n0 code out"; return 0;
 }
