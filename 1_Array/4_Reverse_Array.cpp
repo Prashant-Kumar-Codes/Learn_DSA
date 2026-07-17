@@ -2,6 +2,7 @@
 using namespace std;
 
 // reverse array using two pointer approach
+// time complexity is O(n)
 void reverse(int arr[], int size){
     cout << endl << "Reversing the Array ..." << endl;
 
