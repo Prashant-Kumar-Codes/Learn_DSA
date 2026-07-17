@@ -22,4 +22,6 @@ int main(){
     
     cout << "Smallest element of the array is: " << smallest << endl;
     cout << "Largest element of the array is: " << largest << endl;
+
+    return 0;
 }

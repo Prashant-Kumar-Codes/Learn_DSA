@@ -21,4 +21,6 @@ int main(){
     // reading the output of Linear Search
     if(idx < 0){cout << "Element " << value << " does not exist in array." << endl;}
     else{cout << "Element "<< value << " exists in the array at index: " << idx << endl;}
+    
+    cout << "Successful run\n0 code out"; return 0;
 }
