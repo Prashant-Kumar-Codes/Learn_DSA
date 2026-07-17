@@ -2,6 +2,11 @@
 #include <iterator>
 using namespace std;
 
+// function to double the elements (pass by reference)
+int arrUpdate(float arr[], int size){
+    for(int i=0; i<size; i++){arr[i] *= 2;}
+}
+
 int main(){
 // create array
     // create array of size 5
@@ -30,8 +35,11 @@ int main(){
     
     cout<<endl;
 
-
-
+// calling the arrUpdate function by passing array as reference
+    arrUpdate(price, 3);
+    cout << "Updated price array: ";
+    for(int i=0; i<3; i++){cout << price[i] << " ";}
+    cout<<endl;
 
     cout << "Successful run\n0 code out"; return 0;
 }
