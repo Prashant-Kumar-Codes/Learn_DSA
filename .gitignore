@@ -1,5 +1,6 @@
-# my extra folders
+# my extra folders and files
 Revision/
+temp.cpp
 
 # exe files: output of c++ files
 *.exe
